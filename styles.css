@@ -500,6 +500,20 @@ section h2 {
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
+.contact-info p {
+  margin: 0 0 0.3rem;
+  line-height: 1.55;
+}
+
+.contact-info .contact-subhead {
+  margin-top: 1.1rem;
+}
+
+.contact-info > div:last-child p {
+  margin-bottom: 1rem;
+  line-height: 1.65;
+}
+
 .contact-info a {
   color: var(--primary);
   text-decoration: none;
@@ -683,6 +697,10 @@ footer .phone {
 /* Blog articles */
 .blog-post {
   overflow-wrap: break-word;
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
 }
 
 .blog-post h1 {
@@ -696,7 +714,7 @@ footer .phone {
   text-align: left;
   font-size: 1.4rem;
   line-height: 1.3;
-  margin: 1.75rem 0 0.6rem;
+  margin: 2.15rem 0 0.7rem;
   color: var(--primary);
 }
 
@@ -704,17 +722,24 @@ footer .phone {
   text-align: left;
   font-size: 1.12rem;
   line-height: 1.35;
-  margin: 1.25rem 0 0.4rem;
+  margin: 1.7rem 0 0.5rem;
   color: var(--primary-dark);
 }
 
 .blog-post p {
-  margin-bottom: 1rem;
+  margin: 0 0 1.15em;
+  line-height: 1.65;
+}
+
+.blog-post p.back-link {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  padding-top: 2.5rem;
 }
 
 .blog-post ul,
 .blog-post ol {
-  margin: 0.25rem 0 1rem;
+  margin: 0.35rem 0 1.25em;
   padding-left: 1.35rem;
 }
 
@@ -727,7 +752,8 @@ footer .phone {
 }
 
 .blog-post li {
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.45em;
+  line-height: 1.65;
 }
 
 .blog-post li ul,
