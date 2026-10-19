@@ -862,3 +862,88 @@ footer .phone {
     padding: 0.45rem 0.5rem;
   }
 }
+
+.disclaimer {
+  font-size: 0.85rem;
+  color: #6b6b6b;
+  line-height: 1.5;
+  max-width: 70ch;
+  margin: 0 auto;
+  padding: 0 20px 2rem;
+}
+
+.blog-preview a,
+.blog-index a,
+.faq a,
+.prose a,
+.blog-post a,
+.blog-more a,
+.species-list a,
+.card a,
+.more-reviews a,
+.contact-info a,
+.blog-preview a:visited,
+.blog-index a:visited,
+.faq a:visited,
+.prose a:visited,
+.blog-post a:visited,
+.blog-more a:visited,
+.species-list a:visited,
+.card a:visited,
+.more-reviews a:visited,
+.contact-info a:visited {
+  color: var(--primary);
+}
+
+nav a:visited {
+  color: var(--text);
+}
+
+nav a:hover,
+nav a:visited:hover {
+  color: var(--primary);
+}
+
+footer a:visited,
+footer a:hover,
+footer a:visited:hover {
+  color: #fff;
+}
+
+.download-bar a:visited {
+  color: #1a1a1a;
+}
+
+.logo a:visited {
+  color: var(--primary);
+}
+
+.cta:visited {
+  color: var(--primary);
+}
+
+.cta:hover,
+.cta:visited:hover {
+  color: #fff;
+}
+
+.cta-secondary:visited {
+  color: #fff;
+}
+
+.cta-secondary:hover,
+.cta-secondary:visited:hover {
+  background: #fff;
+  color: var(--primary);
+}
+
+.contact .cta:visited,
+.contact .cta-secondary:visited,
+.contact .cta:visited:hover,
+.contact .cta-secondary:visited:hover,
+.prose .cta:visited,
+.prose .cta:visited:hover,
+.contact-info a.cta:visited,
+.contact-info a.cta-secondary:visited {
+  color: #fff;
+}
