@@ -208,6 +208,34 @@ section h2 {
   font-size: 1.05rem;
 }
 
+.about-badges {
+  clear: both;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 240px));
+  justify-content: center;
+  gap: 1rem 1.25rem;
+  margin-top: 0.5rem;
+  align-items: center;
+}
+
+.about-badges a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #d5e3ea;
+  border-top: 4px solid var(--primary);
+  border-radius: 10px;
+  padding: 0.7rem 0.8rem;
+  min-height: 124px;
+}
+
+.about-badges img {
+  width: 100%;
+  height: 104px;
+  object-fit: contain;
+}
+
 /* Photos / Gallery */
 .gallery {
   display: grid;
@@ -300,7 +328,7 @@ section h2 {
   background: #f3f7f9;
 }
 
-/* Credentials */
+/* Memberships and additional training */
 .credentials {
   background: #fff;
 }
@@ -422,7 +450,7 @@ section h2 {
   margin-top: 1rem;
 }
 
-/* Credentials */
+/* Two-column lists */
 .cred-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -470,6 +498,20 @@ section h2 {
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.contact-info p {
+  margin: 0 0 0.3rem;
+  line-height: 1.55;
+}
+
+.contact-info .contact-subhead {
+  margin-top: 1.1rem;
+}
+
+.contact-info > div:last-child p {
+  margin-bottom: 1rem;
+  line-height: 1.65;
 }
 
 .contact-info a {
@@ -530,6 +572,20 @@ footer .phone {
     display: block;
   }
 
+  .about-badges {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .about-badges a {
+    min-height: 96px;
+    padding: 0.5rem;
+  }
+
+  .about-badges img {
+    height: 76px;
+  }
+
   .hero-content h1 {
     font-size: 2.4rem;
   }
@@ -570,25 +626,54 @@ footer .phone {
 }
 
 .prose {
-  max-width: 760px;
+  max-width: 70ch;
   margin: 0 auto;
 }
 
-.prose p,
+.prose p {
+  margin: 0 0 1.15em;
+  line-height: 1.65;
+  font-size: 1.05rem;
+}
+
 .prose li {
-  margin-bottom: 0.9rem;
+  margin-bottom: 0.45em;
+  line-height: 1.65;
   font-size: 1.05rem;
 }
 
 .prose h2 {
   text-align: left;
-  font-size: 1.45rem;
-  margin: 1.8rem 0 0.6rem;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  margin: 2.15rem 0 0.7rem;
+  color: var(--primary);
+}
+
+.prose h3 {
+  text-align: left;
+  font-size: 1.12rem;
+  line-height: 1.35;
+  margin: 1.55rem 0 0.4rem;
+  color: var(--primary-dark);
+}
+
+.prose ul,
+.prose ol {
+  margin: 0.35rem 0 1.25em;
+  padding-left: 1.35rem;
 }
 
 .prose ul {
-  padding-left: 1.2rem;
-  margin-bottom: 1rem;
+  list-style: disc;
+}
+
+.landing-photo {
+  display: block;
+  width: min(100%, 320px);
+  height: auto;
+  border-radius: 10px;
+  margin: 0 0 1.25rem;
 }
 
 .faq details {
@@ -635,5 +720,230 @@ footer .phone {
 
 .prose .cta:hover {
   background: var(--primary-dark);
+  color: #fff;
+}
+
+/* Blog articles */
+.blog-post {
+  overflow-wrap: break-word;
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+}
+
+.blog-post h1 {
+  font-size: clamp(1.6rem, 4vw, 2.1rem);
+  line-height: 1.25;
+  margin: 0 0 0.35rem;
+  text-align: left;
+}
+
+.blog-post h2 {
+  text-align: left;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  margin: 2.15rem 0 0.7rem;
+  color: var(--primary);
+}
+
+.blog-post h3 {
+  text-align: left;
+  font-size: 1.12rem;
+  line-height: 1.35;
+  margin: 1.7rem 0 0.5rem;
+  color: var(--primary-dark);
+}
+
+.blog-post p {
+  margin: 0 0 1.15em;
+  line-height: 1.65;
+}
+
+.blog-post p.back-link {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  padding-top: 2.5rem;
+}
+
+.blog-post ul,
+.blog-post ol {
+  margin: 0.35rem 0 1.25em;
+  padding-left: 1.35rem;
+}
+
+.blog-post ul {
+  list-style: disc;
+}
+
+.blog-post ol {
+  list-style: decimal;
+}
+
+.blog-post li {
+  margin-bottom: 0.45em;
+  line-height: 1.65;
+}
+
+.blog-post li ul,
+.blog-post li ol {
+  margin-top: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+.blog-post a {
+  color: var(--primary);
+}
+
+.blog-post blockquote {
+  margin: 1rem 0 1.15rem;
+  padding: 0.65rem 1rem;
+  border-left: 4px solid var(--primary);
+  background: var(--light);
+}
+
+.blog-post .table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0.35rem 0 1.15rem;
+}
+
+.blog-post table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.98rem;
+  min-width: 16rem;
+}
+
+.blog-post th,
+.blog-post td {
+  border: 1px solid #d5e3ea;
+  padding: 0.55rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.blog-post th {
+  background: #f3f7f9;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.blog-index h1 {
+  text-align: left;
+  color: var(--primary);
+  font-size: clamp(1.7rem, 4vw, 2.2rem);
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+.blog-index > p {
+  margin-bottom: 1.25rem;
+}
+
+.blog-more {
+  text-align: center;
+  margin-top: 0.25rem;
+  font-weight: 600;
+}
+
+.blog-more a {
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .blog-post h2 {
+    font-size: 1.25rem;
+  }
+
+  .blog-post th,
+  .blog-post td {
+    padding: 0.45rem 0.5rem;
+  }
+}
+
+.disclaimer {
+  font-size: 0.85rem;
+  color: #6b6b6b;
+  line-height: 1.5;
+  max-width: 70ch;
+  margin: 0 auto;
+  padding: 0 20px 2rem;
+}
+
+.blog-preview a,
+.blog-index a,
+.faq a,
+.prose a,
+.blog-post a,
+.blog-more a,
+.species-list a,
+.card a,
+.more-reviews a,
+.contact-info a,
+.blog-preview a:visited,
+.blog-index a:visited,
+.faq a:visited,
+.prose a:visited,
+.blog-post a:visited,
+.blog-more a:visited,
+.species-list a:visited,
+.card a:visited,
+.more-reviews a:visited,
+.contact-info a:visited {
+  color: var(--primary);
+}
+
+nav a:visited {
+  color: var(--text);
+}
+
+nav a:hover,
+nav a:visited:hover {
+  color: var(--primary);
+}
+
+footer a:visited,
+footer a:hover,
+footer a:visited:hover {
+  color: #fff;
+}
+
+.download-bar a:visited {
+  color: #1a1a1a;
+}
+
+.logo a:visited {
+  color: var(--primary);
+}
+
+.cta:visited {
+  color: var(--primary);
+}
+
+.cta:hover,
+.cta:visited:hover {
+  color: #fff;
+}
+
+.cta-secondary:visited {
+  color: #fff;
+}
+
+.cta-secondary:hover,
+.cta-secondary:visited:hover {
+  background: #fff;
+  color: var(--primary);
+}
+
+.contact .cta:visited,
+.contact .cta-secondary:visited,
+.contact .cta:visited:hover,
+.contact .cta-secondary:visited:hover,
+.prose .cta:visited,
+.prose .cta:visited:hover,
+.contact-info a.cta:visited,
+.contact-info a.cta-secondary:visited {
   color: #fff;
 }

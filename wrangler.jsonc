@@ -1,0 +1,10 @@
+{
+  "name": "logankopp-com",
+  "compatibility_date": "2026-10-18",
+  "preview_urls": true,
+  "assets": {
+    "directory": ".",
+    "html_handling": "none"
+  },
+  "previews": {}
+}
