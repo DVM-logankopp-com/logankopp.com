@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://logankopp.com/</loc></url>
-  <url><loc>https://logankopp.com/rabbits.html</loc><lastmod>2026-10-18</lastmod></url>
-  <url><loc>https://logankopp.com/guinea-pigs.html</loc></url>
-  <url><loc>https://logankopp.com/ferrets.html</loc><lastmod>2026-10-18</lastmod></url>
-  <url><loc>https://logankopp.com/small-mammals.html</loc></url>
-  <url><loc>https://logankopp.com/referring-veterinarians.html</loc></url>
+  <url><loc>https://logankopp.com/</loc><lastmod>2026-10-23</lastmod></url>
+  <url><loc>https://logankopp.com/rabbits.html</loc><lastmod>2026-10-23</lastmod></url>
+  <url><loc>https://logankopp.com/guinea-pigs.html</loc><lastmod>2026-10-23</lastmod></url>
+  <url><loc>https://logankopp.com/ferrets.html</loc><lastmod>2026-10-23</lastmod></url>
+  <url><loc>https://logankopp.com/chinchillas.html</loc><lastmod>2026-10-23</lastmod></url>
+  <url><loc>https://logankopp.com/rats-and-mice.html</loc><lastmod>2026-10-23</lastmod></url>
+  <url><loc>https://logankopp.com/hedgehogs.html</loc><lastmod>2026-10-23</lastmod></url>
+  <url><loc>https://logankopp.com/sugar-gliders.html</loc><lastmod>2026-10-23</lastmod></url>
+  <url><loc>https://logankopp.com/small-mammals.html</loc><lastmod>2026-10-23</lastmod></url>
+  <url><loc>https://logankopp.com/referring-veterinarians.html</loc><lastmod>2026-10-23</lastmod></url>
   <url><loc>https://logankopp.com/blog/owners.html</loc></url>
   <url><loc>https://logankopp.com/blog/clinical.html</loc></url>
   <url><loc>https://logankopp.com/blog/gi-stasis-rabbits.html</loc></url>
