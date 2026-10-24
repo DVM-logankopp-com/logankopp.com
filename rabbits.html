@@ -23,7 +23,13 @@
         "description": "Rabbit veterinarian at Priest Lake Veterinary Hospital in Antioch, TN.",
         "url": "https://logankopp.com/rabbits.html",
         "telephone": "+1-615-361-4646",
-        "image": "https://logankopp.com/images/dr-kopp-rabbit.jpeg",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://logankopp.com/images/dr-kopp-young-white-rabbit.jpg",
+          "width": 900,
+          "height": 1200,
+          "caption": "Dr. Logan Kopp holding a young white rabbit"
+        },
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "2445 Morris Gentry Blvd",
@@ -135,10 +141,18 @@
     </nav>
   </header>
   <section class="page-hero">
-    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span aria-current="page">Rabbit vet in Nashville</span></nav>
-    <h1>Rabbit Veterinarian in Nashville, TN</h1>
-    <p>Dr. Logan Kopp is Nashville's rabbit specialist and the rabbit veterinarian at Priest Lake Veterinary Hospital in Antioch. Families come from Franklin, Murfreesboro, Mt. Juliet, and across Middle Tennessee. If your rabbit has stopped eating, call while the hospital is open.</p>
-    <p><a href="tel:6153614646" class="cta">Call (615) 361-4646</a></p>
+    <div class="page-hero-split">
+      <div>
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span aria-current="page">Rabbit vet in Nashville</span></nav>
+        <h1>Rabbit Veterinarian in Nashville, TN</h1>
+        <p>Dr. Logan Kopp is Nashville's rabbit specialist and the rabbit veterinarian at Priest Lake Veterinary Hospital in Antioch. Families come from Franklin, Murfreesboro, Mt. Juliet, and across Middle Tennessee. If your rabbit has stopped eating, call while the hospital is open.</p>
+        <p><a href="tel:6153614646" class="cta">Call (615) 361-4646</a></p>
+      </div>
+      <figure class="hero-figure">
+        <img src="images/dr-kopp-young-white-rabbit.jpg" alt="Dr. Logan Kopp holding a young white rabbit" width="900" height="1200">
+        <figcaption>A young white rabbit at the hospital.</figcaption>
+      </figure>
+    </div>
   </section>
   <section>
     <div class="container prose">
