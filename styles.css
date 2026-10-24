@@ -50,7 +50,7 @@ header {
   z-index: 100;
 }
 
-nav {
+header nav {
   max-width: 1100px;
   margin: 0 auto;
   padding: 1rem 20px;
@@ -65,7 +65,7 @@ nav {
   color: var(--primary);
 }
 
-nav ul {
+header nav ul {
   display: flex;
   list-style: none;
   gap: 1.15rem;
@@ -73,14 +73,14 @@ nav ul {
   justify-content: flex-end;
 }
 
-nav a {
+header nav a {
   text-decoration: none;
   color: var(--text);
   font-weight: 500;
   transition: color 0.2s;
 }
 
-nav a:hover {
+header nav a:hover {
   color: var(--primary);
 }
 
@@ -590,7 +590,7 @@ footer .phone {
     font-size: 2.4rem;
   }
 
-  nav ul {
+  header nav ul {
     gap: 1rem;
     font-size: 0.9rem;
     flex-wrap: wrap;
@@ -619,15 +619,34 @@ footer .phone {
   margin-bottom: 0.6rem;
 }
 
-.page-hero .breadcrumb {
+.breadcrumb {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0 0 0.85rem;
+  padding: 0;
+  text-align: left;
   font-size: 0.95rem;
-  margin: 0 auto 0.85rem;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.page-hero .breadcrumb {
+  color: #d5e4ec;
 }
 
 .page-hero .breadcrumb a,
-.page-hero .breadcrumb a:visited,
-.page-hero .breadcrumb a:hover {
-  color: #fff;
+.page-hero .breadcrumb a:visited {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.page-hero .breadcrumb a:hover,
+.page-hero .breadcrumb a:focus-visible,
+.page-hero .breadcrumb a:visited:hover,
+.page-hero .breadcrumb a:visited:focus-visible {
+  color: #ffffff;
   text-decoration: underline;
   text-underline-offset: 0.15em;
 }
@@ -908,12 +927,12 @@ footer .phone {
   color: var(--primary);
 }
 
-nav a:visited {
+header nav a:visited {
   color: var(--text);
 }
 
-nav a:hover,
-nav a:visited:hover {
+header nav a:hover,
+header nav a:visited:hover {
   color: var(--primary);
 }
 
